@@ -13,10 +13,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.get('/api/notes', (req, res) => 
-    // fs.readFile('./db/db.json', 'utf-8', (err, data) => {
-    //     JSON.parse(data)
-    //     res.json(data)
-    // })
     res.json(notes)
 );
 
